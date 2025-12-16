@@ -19,8 +19,8 @@ preamplifier, shaper, comparator, and counter” [2].
 
 <div style="text-align: center; margin-top: 40px; margin-bottom: 40px;">
 
-  <img src="https://raw.githubusercontent.com/frcaud/xray_detector/main/pages/pxl_detector.png?token=GHSAT0AAAAAADQ65QCATR6JYLW3HK4K7GDS2JYSO7Q" alt="Image 1" width="720" style="display: inline; margin-right: 10px;">
-  <img src="schem_detec.png" alt="Image 2" width="168" style="display: inline;">
+  <img src="https://github.com/frcaud/xray_detector/raw/main/pages/pxl_detector.png" alt="Image 1" width="720" style="display: inline; margin-right: 10px;">
+  <img src="https://github.com/frcaud/xray_detector/raw/main/pages/schem_detec.png" alt="Image 2" width="168" style="display: inline;">
 
   <div style="width: 860px; margin: 0 auto; text-align: center;">
     <strong>Figure 1:</strong> a) Drawing of a typical hybrid pixel detector. The sensor absorbs the X-rays and transmits the created
@@ -49,7 +49,7 @@ all pixels.
 
 <div style="text-align: center; margin-top: 40px; margin-bottom: 40px;">
 
-  <img src="photon_counting.png" alt="Photon counting" width="800" style="display: inline;">
+  <img src="https://github.com/frcaud/xray_detector/raw/main/pages/photon_counting.png" alt="Photon counting" width="800" style="display: inline;">
 
    <div style="width: 700px; margin: 0 auto; text-align: center;">
     <strong>Figure 2:</strong> Principle of a photon counting detector: For each arriving photon, the readout pixel evaluates whether the signal surpasses a set threshold and if so, increases the counter. (Figure adapted from [2])
@@ -74,7 +74,7 @@ prone to failure, necessitating manual intervention and contributing to lengthy 
 
 <div style="text-align: center; margin-top: 40px; margin-bottom: 40px;">
 
-  <img src="threshold_scans.png" alt="Threshold scans" width="1000" style="display: inline;">
+  <img src="https://github.com/frcaud/xray_detector/raw/main/pages/threshold_scans.png" alt="Threshold scans" width="1000" style="display: inline;">
 
    <div style="width: 980px; margin: 0 auto; text-align: center;">
     <strong>Figure 3:</strong> a) Comparison of uncorrected (orange) and corrected (green) threshold scans of many pixels of a photon-
