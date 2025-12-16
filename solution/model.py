@@ -1,5 +1,7 @@
 import numpy as np
 from sklearn.ensemble import RandomForestRegressor
+import torch
+from skada import CORALAdapter, make_da_pipeline
 
 
 class Model:
@@ -12,6 +14,15 @@ class Model:
             random_state=42,
             n_jobs=-1
         )
+        
+        self.coral_adapter = CORALAdapter()
+        
+        self.pipe = make_da_pipeline(
+            self.coral_adapter,
+            self.regressor
+        )
+        
+        print(f"cuda available = {torch.cuda.is_available()}")
 
     def fit(self, X, y, X_adapt):
         """ Train the model.
@@ -23,8 +34,14 @@ class Model:
             X_adapt: DA training data matrix of shape (num-samples-DA, num-features),
             type np.ndarray.
         """
-        y = y.ravel()
-        self.regressor.fit(X, y, X_adapt)   
+        X_train = np.concatenate([X, X_adapt], axis=0)
+        y_train = np.concatenate([
+        	y.astype(float).ravel(),
+        	np.full(X_adapt.shape[0], np.nan)
+        ])
+        sample_domain = np.concatenate([np.zeros(len(X)), -np.ones(len(X_adapt))])
+        sample_domain = sample_domain.astype(int)
+        self.pipe.fit(X_train, y_train, sample_domain=sample_domain)   
 
     def predict(self, X):
         """ Predict the labels.
@@ -33,5 +50,5 @@ class Model:
           X: Test data matrix of shape (num-samples, num-features) to pass to the
           model for inference, type np.ndarray.
         """
-        y = self.regressor.predict(X)
+        y = self.pipe.predict(X)
         return y
