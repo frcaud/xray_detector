@@ -19,7 +19,7 @@ preamplifier, shaper, comparator, and counter” [2].
 
 <div style="text-align: center; margin-top: 40px; margin-bottom: 40px;">
 
-  <img src="pxl_detector.png" alt="Image 1" width="720" style="display: inline; margin-right: 10px;">
+  <img src="https://raw.githubusercontent.com/frcaud/xray_detector/main/pages/pxl_detector.png?token=GHSAT0AAAAAADQ65QCATR6JYLW3HK4K7GDS2JYSO7Q" alt="Image 1" width="720" style="display: inline; margin-right: 10px;">
   <img src="schem_detec.png" alt="Image 2" width="168" style="display: inline;">
 
   <div style="width: 860px; margin: 0 auto; text-align: center;">
