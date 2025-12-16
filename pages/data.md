@@ -1,5 +1,7 @@
 # Data
 
+See the [starting_kit notebook](https://github.com/frcaud/xray_detector/blob/main/starting_kit.ipynb) for data exploration, baseline models, and a domain adaptation example.
+
 ## From S-Curves to Tabular Data
 
 The raw data for this challenge originates from threshold scans performed on hybrid pixel detectors. As described in the introduction, each threshold scan produces an S-curve for every pixel in the detector. These S-curves represent the cumulative distribution of photon counts as a function of the applied threshold voltage (here in DAC units).
