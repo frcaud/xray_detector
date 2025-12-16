@@ -1,6 +1,23 @@
 # ML for Hybrid Pixel Detector Calibration
 *Authors: François Caud (Dataia, Université Paris-Saclay), Marie Andrä, Martin Chauvin, Arkadiusz Dawiec (SOLEIL Synchrotron, Saint Aubin, FRANCE)*
 
+<div>
+<table style="width:100%; background-color:transparent;">
+  <tr style="background-color:transparent;">
+    <td align="left"; style="background-color:transparent; width: 40%;">
+        <a href="https://dataia.eu">
+            <img src="https://github.com/frcaud/xray_detector/raw/main/pages/DATAIA-h.png" width="450px"/>
+        </a>
+    </td>
+    <td align="right"; style="background-color:transparent; width: 40%;">
+        <a href="https://mdls.fr/">
+            <img src="https://github.com/frcaud/xray_detector/raw/main/pages/logo_0.png" width="350px"/>
+        </a>
+    </td>
+  </tr>
+ </table>
+</div>
+
 Research conducted at synchrotron light sources, such as crystallography, X-ray diffraction and
 imaging experiments, relies on high-performance detectors with good energy resolution and
 signal quality. Single-photon counting hybrid pixel detectors are the preferred choice fulfilling
